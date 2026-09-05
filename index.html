@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Again.</title>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="./icon.jpg" type="image/jpeg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="stage">
+      <div class="deck">
+        <article class="card" data-card="a">
+          <h1 class="large-title" hidden></h1>
+          <h2 class="title" hidden></h2>
+          <p class="body" hidden></p>
+          <img class="card-image" src="" alt="" hidden />
+          <div class="status" hidden><p class="hint"></p></div>
+        </article>
+        <article class="card" data-card="b" aria-hidden="true">
+          <h1 class="large-title" hidden></h1>
+          <h2 class="title" hidden></h2>
+          <p class="body" hidden></p>
+          <img class="card-image" src="" alt="" hidden />
+          <div class="status" hidden><p class="hint"></p></div>
+        </article>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/Observer.min.js"></script>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
