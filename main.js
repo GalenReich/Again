@@ -15,6 +15,18 @@ const cards = Array.from(document.querySelectorAll(".card"));
 const deck = document.querySelector(".deck");
 const SCROLL_PIXELS_PER_CARD = 780;
 
+function preloadImages() {
+  const urls = new Set(
+    Object.values(story.nodes)
+      .map((node) => node.image)
+      .filter(Boolean),
+  );
+  urls.forEach((url) => {
+    const img = new Image();
+    img.src = url;
+  });
+}
+
 function resolveEdge(nodeId, direction) {
   const node = story.nodes[nodeId];
   if (!node) return null;
@@ -266,4 +278,5 @@ function setup() {
   });
 }
 
+preloadImages();
 setup();
